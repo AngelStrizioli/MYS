@@ -99,7 +99,7 @@ export default function App() {
     parser.evaluate("f(x)=" + funcion);
     for (var i = a; i <= b; i = i + h) {
       var aux = parser.evaluate("f(" + i + ")");
-      resultado += parser.evaluate("f(" + i + ")") * h;
+      resultado += parser.evaluate("f(" + i + ")");
       if(aux <= 0){
         arrayAux.push({ x: i, y: aux, color: '#E91E21'});
       } else {
@@ -107,7 +107,7 @@ export default function App() {
       }
       
     }
-    localStorage.setItem("resultadoRectangulo", Math.abs(resultado.toFixed(4)));
+    localStorage.setItem("resultadoRectangulo", Math.abs((resultado * h).toFixed(4)));
     return arrayAux;
 }
 
@@ -178,7 +178,7 @@ export default function App() {
             <LineSeries
               className="linemark-series-example"
               style={{
-                strokeWidth: "2px",
+                strokeWidth: "3px",
                 color: "black",
               }}
               lineStyle={{ stroke: "black" }}
