@@ -19,5 +19,7 @@ Además de los explicado en clase por el profesor Acero Fernando y los apuntes p
 - https://engcourses-uofa.ca/books/numericalanalysis/numerical-integration/rectangle-method/
 - https://github.com/cppf/rectangular-integration/blob/main/main.cpp
 - https://programmerclick.com/article/35861466240/
+- Libreria para evaluar funciones: https://mathjs.org/
+- Libreria para graficar las funciones y las grillas: https://www.npmjs.com/package/ react-vis
 
 
